@@ -97,9 +97,15 @@ export default function Home() {
             <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
               <h2 className="text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl">About Me</h2>
               <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-                I'm a [Your Profession] with [X years] of experience specializing in [Your Specialization]. I'm
-                passionate about [Your Interests] and dedicated to [Your Goals].
+              I’m a master’s student in Computer Science at SUNY Buffalo with over five years of industry experience at the 
+              intersection of software engineering, cloud infrastructure, and machine learning. 
+              From designing fault-tolerant AWS architectures to exploring and building Machine Learning models. 
+              Passionate about automation, observability, and AI-driven optimization, 
+              I’m always looking for ways to make systems not just reliable, but simpler.
               </p>
+              <blockquote className="mt-4 text-lg italic text-gray-600">
+              “Simplicity is prerequisite for reliability.” – Edsger W. Dijkstra
+              </blockquote>
               <div className="w-full max-w-full py-4">
                 <Tabs defaultValue="skills" className="w-full">
                   <TabsList className="grid w-full grid-cols-3">
@@ -217,10 +223,10 @@ export default function Home() {
             <div className="mx-auto max-w-3xl space-y-8 py-8">
               {[
                 {
-                  title: "Senior Developer",
-                  company: "Company Name",
-                  period: "Jan 2022 - Present",
-                  description: "Describe your responsibilities and achievements in this role.",
+                  title: "Senior Site Reliability Engineer (DevOps)",
+                  company: "Cvent",
+                  period: "Sept 2020 - June 2024",
+                  description: "As a Senior SRE, I led the modernization of Windows microservices from monolith to ECS with zero downtime, designed AWS cloud architecture using CDK and TypeScript, and spearheaded migrations for acquired technologies. I also optimized efficiency and costs with serverless solutions and automated AMI builds using Chef Solo.",
                 },
                 {
                   title: "Web Developer",
