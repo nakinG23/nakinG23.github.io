@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  output: 'export', 
+  trailingSlash: true,
   images: {
-    domains: ["placeholder.com"],
+    unoptimized: true,
   },
-}
+};
 
-module.exports = nextConfig
-
+module.exports = nextConfig;
