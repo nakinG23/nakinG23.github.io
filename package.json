@@ -1,6 +1,6 @@
 {
   "name": "minimal-personal-website",
-  "homepage": "https://nakinahluwalia.github.io",
+  "homepage": "https://nakinG23.github.io",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npm run build && gh-pages -d out -r https://github.com/nakinG23/nakinahluwalia.github.io.git"
+    "export": "next build && next export",
+    "deploy": "npm run build && touch out/.nojekyll && gh-pages -d out -t true"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
