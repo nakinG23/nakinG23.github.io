@@ -10,7 +10,7 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
-          <div className="font-bold">Your Name</div>
+          <div className="font-bold">Nakin Ahluwalia</div>
           <nav className="hidden md:flex gap-6">
             <Link href="#about" className="text-sm font-medium transition-colors hover:text-primary">
               About
@@ -34,10 +34,10 @@ export default function Home() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Hi, I'm Your Name
+                    Hi, I'm Nakin
                   </h1>
                   <p className="text-xl text-muted-foreground">
-                    A passionate [Your Profession] specializing in [Your Specialization]
+                  A dedicated Computer Science graduate specializing in Machine Learning and Software Development.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -50,7 +50,7 @@ export default function Home() {
                 </div>
                 <div className="flex gap-4">
                   <Link
-                    href="https://github.com/yourusername"
+                    href="https://github.com/nakinG23"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-foreground"
@@ -59,7 +59,7 @@ export default function Home() {
                     <span className="sr-only">GitHub</span>
                   </Link>
                   <Link
-                    href="https://linkedin.com/in/yourusername"
+                    href="www.linkedin.com/in/nakinn-ahluwalia-a9877350"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-foreground"
@@ -80,7 +80,7 @@ export default function Home() {
               </div>
               <div className="flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=600&width=600"
+                  src="/cover.jpeg"
                   alt="Profile"
                   width={400}
                   height={400}
@@ -97,14 +97,14 @@ export default function Home() {
             <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
               <h2 className="text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl">About Me</h2>
               <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-              I’m a master’s student in Computer Science at SUNY Buffalo with over five years of industry experience at the 
+              I'm a master's student in Computer Science at SUNY Buffalo with over five years of industry experience at the 
               intersection of software engineering, cloud infrastructure, and machine learning. 
               From designing fault-tolerant AWS architectures to exploring and building Machine Learning models. 
               Passionate about automation, observability, and AI-driven optimization, 
-              I’m always looking for ways to make systems not just reliable, but simpler.
+              I'm always looking for ways to make systems not just reliable, but simpler.
               </p>
               <blockquote className="mt-4 text-lg italic text-gray-600">
-              “Simplicity is prerequisite for reliability.” – Edsger W. Dijkstra
+              "Simplicity is prerequisite for reliability." – Edsger W. Dijkstra
               </blockquote>
               <div className="w-full max-w-full py-4">
                 <Tabs defaultValue="skills" className="w-full">
@@ -328,7 +328,7 @@ export default function Home() {
                   <input
                     id="name"
                     className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    placeholder="Your name"
+                    placeholder="Nakin Ahluwalia"
                   />
                 </div>
                 <div className="grid gap-2">
@@ -369,7 +369,7 @@ export default function Home() {
       <footer className="w-full border-t py-6">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center gap-4 md:flex-row md:justify-between">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Nakin Ahluwalia. All rights reserved.
           </p>
           <nav className="flex gap-4">
             <Link href="#" className="text-sm font-medium text-muted-foreground hover:text-foreground">
