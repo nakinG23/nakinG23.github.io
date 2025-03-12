@@ -10,7 +10,7 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
-          <div className="font-bold">Nakin Ahluwalia</div>
+          <div className="font-bold">Nakin A</div>
           <nav className="hidden md:flex gap-6">
             <Link href="#about" className="text-sm font-medium transition-colors hover:text-primary">
               About
@@ -328,7 +328,7 @@ export default function Home() {
                   <input
                     id="name"
                     className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    placeholder="Nakin Ahluwalia"
+                    placeholder="Nakin A"
                   />
                 </div>
                 <div className="grid gap-2">
