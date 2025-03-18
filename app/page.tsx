@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Download, Github, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react"
+import { Download, Github, Linkedin, Mail, MapPin, Twitter } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
-          <div className="font-bold">Nakin A</div>
-          <nav className="hidden md:flex gap-6">
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex h-16 items-center">
+          <div className="font-bold mr-auto">Nakin A</div>
+          <nav className="hidden md:flex gap-6 absolute left-1/2 transform -translate-x-1/2">
             <Link href="#about" className="text-sm font-medium transition-colors hover:text-primary">
               About
             </Link>
@@ -22,7 +22,7 @@ export default function Home() {
               Experience
             </Link>
           </nav>
-          <Button asChild size="sm">
+          <Button asChild size="sm" className="ml-auto">
             <Link href="#contact">Get in Touch</Link>
           </Button>
         </div>
@@ -33,22 +33,12 @@ export default function Home() {
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Hi, I'm Nakin
-                  </h1>
+                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">Hi, I'm Nakin</h1>
                   <p className="text-xl text-muted-foreground">
-                  A dedicated Computer Science graduate specializing in Machine Learning and Software Development.
+                    A dedicated Computer Science graduate specializing in Machine Learning and Software Development.
                   </p>
                 </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button variant="outline" asChild>
-                    <Link href="/resume.pdf" target="_blank">
-                      <Download className="mr-2 h-4 w-4" />
-                      Download Resume
-                    </Link>
-                  </Button>
-                </div>
-                <div className="flex gap-4">
+                <div className="flex gap-4 items-center">
                   <Link
                     href="https://github.com/nakinG23"
                     target="_blank"
@@ -76,9 +66,15 @@ export default function Home() {
                     <Twitter className="h-5 w-5" />
                     <span className="sr-only">Twitter</span>
                   </Link>
+                  <Button variant="outline" asChild size="sm" className="ml-2">
+                    <Link href="/resume.pdf" target="_blank">
+                      <Download className="mr-2 h-4 w-4" />
+                      Download Resume
+                    </Link>
+                  </Button>
                 </div>
               </div>
-              <div className="flex items-center justify-center">
+              <div className="flex flex-col items-center justify-center gap-4">
                 <Image
                   src="/cover.jpeg"
                   alt="Profile"
@@ -87,6 +83,10 @@ export default function Home() {
                   className="aspect-square rounded-full object-cover border-4 border-border bg-muted"
                   priority
                 />
+                <div className="flex items-center gap-2 text-muted-foreground mt-4">
+                  <MapPin className="h-5 w-5" />
+                  <span>New York, USA</span>
+                </div>
               </div>
             </div>
           </div>
@@ -97,14 +97,14 @@ export default function Home() {
             <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
               <h2 className="text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl">About Me</h2>
               <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-              I'm a master's student in Computer Science at SUNY Buffalo with over five years of industry experience at the 
-              intersection of software engineering, cloud infrastructure, and machine learning. 
-              From designing fault-tolerant AWS architectures to exploring and building Machine Learning models. 
-              Passionate about automation, observability, and AI-driven optimization, 
-              I'm always looking for ways to make systems not just reliable, but simpler.
+                I'm a master's student in Computer Science at SUNY Buffalo with over five years of industry experience
+                at the intersection of software engineering, cloud infrastructure, and machine learning. From designing
+                fault-tolerant AWS architectures to exploring and building Machine Learning models. Passionate about
+                automation, observability, and AI-driven optimization, I'm always looking for ways to make systems not
+                just reliable, but simpler.
               </p>
               <blockquote className="mt-4 text-lg italic text-gray-600">
-              "Simplicity is prerequisite for reliability." – Edsger W. Dijkstra
+                "Simplicity is prerequisite for reliability." – Edsger W. Dijkstra
               </blockquote>
               <div className="w-full max-w-full py-4">
                 <Tabs defaultValue="skills" className="w-full">
@@ -115,7 +115,16 @@ export default function Home() {
                   </TabsList>
                   <TabsContent value="skills" className="mt-6">
                     <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
-                      {["JavaScript", "React", "Node.js", "TypeScript", "HTML", "CSS", "Git", "UI/UX"].map((skill) => (
+                      {[
+                        "Python",
+                        "TypeScript",
+                        "Next.js",
+                        "Node.js",
+                        "C++",
+                        "Swift",
+                        "AWS",
+                        "Stakeholder Management",
+                      ].map((skill) => (
                         <div
                           key={skill}
                           className="flex items-center justify-center rounded-lg border border-border bg-card p-4 text-center"
@@ -128,18 +137,18 @@ export default function Home() {
                   <TabsContent value="education" className="mt-6">
                     <div className="grid gap-4">
                       <div className="rounded-lg border border-border bg-card p-4">
-                        <h3 className="font-semibold">Bachelor of Science in Computer Science</h3>
-                        <p className="text-sm text-muted-foreground">University Name, 2018-2022</p>
+                        <h3 className="font-semibold">Master of Science in Computer Science</h3>
+                        <p className="text-sm text-muted-foreground">SUNY Buffalo, NY, USA 2024-2026</p>
                       </div>
                       <div className="rounded-lg border border-border bg-card p-4">
-                        <h3 className="font-semibold">Relevant Certification</h3>
-                        <p className="text-sm text-muted-foreground">Certification Provider, 2023</p>
+                        <h3 className="font-semibold">Bachelor of Technology in Computer Science</h3>
+                        <p className="text-sm text-muted-foreground">VIT, Vellore, India 2014-2018</p>
                       </div>
                     </div>
                   </TabsContent>
                   <TabsContent value="interests" className="mt-6">
                     <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
-                      {["Open Source", "Web Development", "UI Design", "Machine Learning", "Reading", "Hiking"].map(
+                      {["Machine Learning", "IOS App Dev", "Automation", "Strength Training", "Reading", "Running"].map(
                         (interest) => (
                           <div
                             key={interest}
@@ -226,19 +235,20 @@ export default function Home() {
                   title: "Senior Site Reliability Engineer (DevOps)",
                   company: "Cvent",
                   period: "Sept 2020 - June 2024",
-                  description: "As a Senior SRE, I led the modernization of Windows microservices from monolith to ECS with zero downtime, designed AWS cloud architecture using CDK and TypeScript, and spearheaded migrations for acquired technologies. I also optimized efficiency and costs with serverless solutions and automated AMI builds using Chef Solo.",
+                  description:
+                    "As a Senior SRE, I led the modernization of Windows microservices from monolith to ECS with zero downtime, designed AWS cloud architecture using CDK and TypeScript, and spearheaded migrations for acquired technologies. I also optimized efficiency and costs with serverless solutions and automated AMI builds using Chef Solo.",
                 },
                 {
-                  title: "Web Developer",
-                  company: "Previous Company",
-                  period: "Jun 2019 - Dec 2021",
-                  description: "Describe your responsibilities and achievements in this role.",
+                  title: "CloudOps Engineer",
+                  company: "Cvent",
+                  period: "Aug 2018 - Dec 2019",
+                  description: "As a CloudOps Engineer I Cloud Operations Engineer I automated incident management by developing a Slack Chat Bot to automate incident response and drastically bring down MTTD & MTTR. Managed cloud deployments and incident troubleshooting in large-scale distributed systems. Designed automation scripts for infrastructure provisioning, cutting manual effort by 60%, and implemented AWS tagging to enhance cost visibility and forecasting using Tableau.”",
                 },
                 {
-                  title: "Junior Developer",
-                  company: "First Company",
-                  period: "Jan 2018 - May 2019",
-                  description: "Describe your responsibilities and achievements in this role.",
+                  title: "Business Intelligence Intern",
+                  company: "Goals101",
+                  period: "June 2017",
+                  description: "Assisted in analyzing and visualizing large-scale financial data to derive insights for business decision-making. Developed interactive dashboards and reports to track key metrics, enhancing data-driven strategies.",
                 },
               ].map((job, index) => (
                 <div
@@ -272,19 +282,19 @@ export default function Home() {
                 <div className="space-y-4">
                   <div className="flex items-center gap-2">
                     <Mail className="h-5 w-5 text-muted-foreground" />
-                    <a href="mailto:your.email@example.com" className="text-muted-foreground hover:text-foreground">
-                      your.email@example.com
+                    <a href="mailto:nakinahluwalia@gmail.com" className="text-muted-foreground hover:text-foreground">
+                      nakinahluwalia@gmail.com
                     </a>
                   </div>
-                  <div className="flex items-center gap-2">
+                  {/* <div className="flex items-center gap-2">
                     <Phone className="h-5 w-5 text-muted-foreground" />
                     <a href="tel:+1234567890" className="text-muted-foreground hover:text-foreground">
                       +1 (234) 567-890
                     </a>
-                  </div>
+                  </div> */}
                   <div className="flex items-center gap-2">
                     <MapPin className="h-5 w-5 text-muted-foreground" />
-                    <span className="text-muted-foreground">City, Country</span>
+                    <span className="text-muted-foreground">New York, USA</span>
                   </div>
                 </div>
                 <div className="flex gap-4">
@@ -298,7 +308,7 @@ export default function Home() {
                     <span className="sr-only">GitHub</span>
                   </Link>
                   <Link
-                    href="https://linkedin.com/in/yourusername"
+                    href="https://www.linkedin.com/in/nakinn-ahluwalia-a9877350"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-foreground"
@@ -328,7 +338,7 @@ export default function Home() {
                   <input
                     id="name"
                     className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    placeholder="Nakin A"
+                    placeholder="Your Name"
                   />
                 </div>
                 <div className="grid gap-2">
