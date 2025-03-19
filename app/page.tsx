@@ -58,7 +58,7 @@ export default function Home() {
                     <span className="sr-only">LinkedIn</span>
                   </Link>
                   <Link
-                    href="https://twitter.com/yourusername"
+                    href="https://x.com/naking23?s=21"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-foreground"
@@ -177,22 +177,22 @@ export default function Home() {
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-8 md:grid-cols-2 lg:grid-cols-3">
               {[
                 {
-                  title: "Project One",
-                  description: "A brief description of your project and what technologies you used.",
-                  image: "/placeholder.svg?height=300&width=400",
-                  link: "https://github.com/yourusername/project-one",
+                  title: "Habits, IOS App (Private temporarily)",
+                  description: "A minimalistic iOS app designed to track and visualize habits with an intuitive UI.",
+                  image: "/IOS.jpeg?height=300&width=400",
+                  link: "https://github.com/nakinG23/habits-v0",
                 },
                 {
-                  title: "Project Two",
-                  description: "A brief description of your project and what technologies you used.",
-                  image: "/placeholder.svg?height=300&width=400",
-                  link: "https://github.com/yourusername/project-two",
+                  title: "Autonomous Robot on Farm",
+                  description: "einforcement learning-based autonomous robot for optimized farm operations based on rewards, positive and negative.",
+                  image: "/RL.jpeg?height=300&width=400",
+                  link: "https://github.com/nakinG23/ML-Projects/tree/main/Reinforcement-Learning/autonomous-robot-on-farm",
                 },
                 {
-                  title: "Project Three",
-                  description: "A brief description of your project and what technologies you used.",
-                  image: "/placeholder.svg?height=300&width=400",
-                  link: "https://github.com/yourusername/project-three",
+                  title: "GOT Character Death Prediction",
+                  description: "A deep learning model that predicts the likelihood of a Game of Thrones character dying based on in-universe data.",
+                  image: "/NN.jpeg?height=300&width=400",
+                  link: "https://github.com/nakinG23/ML-Projects/tree/main/Neural-Networks/character-predictions",
                 },
               ].map((project, index) => (
                 <Card key={index} className="overflow-hidden">
@@ -236,13 +236,13 @@ export default function Home() {
                   company: "Cvent",
                   period: "Sept 2020 - June 2024",
                   description:
-                    "As a Senior SRE, I led the modernization of Windows microservices from monolith to ECS with zero downtime, designed AWS cloud architecture using CDK and TypeScript, and spearheaded migrations for acquired technologies. I also optimized efficiency and costs with serverless solutions and automated AMI builds using Chef Solo.",
+                    "I led the modernization of Windows microservices from monolith to ECS with zero downtime, designed AWS cloud architecture using CDK and TypeScript, and spearheaded migrations for acquired technologies. I also optimized efficiency and costs with serverless solutions and automated AMI builds using Chef Solo.",
                 },
                 {
                   title: "CloudOps Engineer",
                   company: "Cvent",
                   period: "Aug 2018 - Dec 2019",
-                  description: "As a CloudOps Engineer I Cloud Operations Engineer I automated incident management by developing a Slack Chat Bot to automate incident response and drastically bring down MTTD & MTTR. Managed cloud deployments and incident troubleshooting in large-scale distributed systems. Designed automation scripts for infrastructure provisioning, cutting manual effort by 60%, and implemented AWS tagging to enhance cost visibility and forecasting using Tableau.”",
+                  description: "I automated incident management by developing a Slack Chat Bot to automate incident response and drastically bring down MTTD & MTTR. Managed cloud deployments and incident troubleshooting in large-scale distributed systems. Designed automation scripts for infrastructure provisioning, cutting manual effort by 60%, and implemented AWS tagging to enhance cost visibility and forecasting using Tableau.”",
                 },
                 {
                   title: "Business Intelligence Intern",
@@ -299,7 +299,7 @@ export default function Home() {
                 </div>
                 <div className="flex gap-4">
                   <Link
-                    href="https://github.com/yourusername"
+                    href="https://github.com/nakinG23"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-foreground"
@@ -317,7 +317,7 @@ export default function Home() {
                     <span className="sr-only">LinkedIn</span>
                   </Link>
                   <Link
-                    href="https://twitter.com/yourusername"
+                    href="https://x.com/naking23?s=21"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-foreground"
